@@ -2,6 +2,8 @@
 
 # Steps to Follw
 - Clone a Project Repo
+- python3.10 -m venv venv (Create Virtual env)
+- source venv/bin/activate(Activate Virtual Environment)
 - pip install -r req.txt
     # Pre- Requsite
         - Python setup
