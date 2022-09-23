@@ -4,5 +4,5 @@ def test_testCase_001():
 
 
 def test_testCase_002():
-    print("test_testCase_001")
+    print("test_testCase_002")
     assert 3==3

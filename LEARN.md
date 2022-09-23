@@ -10,3 +10,13 @@
 
 # Execute with Specific Test File
     -$ pytest <path>/test_testCase_001.py -v -s # Execute Specific Test File
+#Maintain State & Run Failed first Approach
+  - #pytest -q --ff (Failed first) Failed first after others 
+  - #pytest -q --lf (last Failed) only Failed others are diselected
+  - #pytest --cache-show  (Show Caches while running tests)
+  - pytest --cache-clear
+
+  - The -q/--quiet flag keeps the output brief in this and following examples.
+
+
+  [Next]: https://docs.pytest.org/en/7.1.x/how-to/usage.html
