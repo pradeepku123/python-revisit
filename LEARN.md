@@ -17,6 +17,8 @@
   - pytest --cache-clear
 
   - The -q/--quiet flag keeps the output brief in this and following examples.
+  -  pytest src/test/  # Run Specific Directory
+  -  pytest -k 001  # Run Test Contains Specific Phraases here like its Execute all Contain 001 in his method name
 
 
-  [Next]: https://docs.pytest.org/en/7.1.x/how-to/usage.html
+  [Next]: https://docs.pytest.org/en/7.1.x/how-to/fixtures.html
