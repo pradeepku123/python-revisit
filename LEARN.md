@@ -20,5 +20,11 @@
   -  pytest src/test/  # Run Specific Directory
   -  pytest -k 001  # Run Test Contains Specific Phraases here like its Execute all Contain 001 in his method name
 
+[Pytest Fixture]
+  -  Test functions request fixtures they require by declaring them as arguments.
+  - Fixtures can be requested more than once per test (return values are cached)
+  - Autouse fixtures (fixtures you don’t have to request) Sometimes you may want to have a fixture (or even several) that you know all your tests will depend on. “Autouse” fixtures are a convenient way to make all tests automatically request them. This can cut out a lot of redundant requests, and can even provide more advanced fixture usage (more on that further down).We can make a fixture an autouse fixture by passing in autouse=True to the fixture’s decorator. Here’s a simple example for how they can be used:
+ - Sometimes you may want to have a fixture (or even several) that you know all your tests will depend on. “Autouse” fixtures are a convenient way to make all tests automatically request them. This can cut out a lot of redundant requests, and can even provide more advanced fixture usage (more on that further down).
 
-  [Next]: https://docs.pytest.org/en/7.1.x/how-to/fixtures.html
+ 
+  [Next]: https://docs.pytest.org/en/7.1.x/how-to/fixtures.html#scope-sharing-fixtures-across-classes-modules-packages-or-session
