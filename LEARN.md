@@ -20,6 +20,12 @@
   -  pytest src/test/  # Run Specific Directory
   -  pytest -k 001  # Run Test Contains Specific Phraases here like its Execute all Contain 001 in his method name
 
+[Autopep8 packages installation]
+  - install via pip -> pip install --upgrade autopep8
+  - Apply pep8 format via cli -> autopep8 --in-place --aggressive --aggressive src/**/*.py
+  - autopep8 depends on pycodestyle package
+
+
 [Pytest Fixture]
   -  Test functions request fixtures they require by declaring them as arguments.
   - Fixtures can be requested more than once per test (return values are cached)
