@@ -32,5 +32,19 @@
   - Autouse fixtures (fixtures you don’t have to request) Sometimes you may want to have a fixture (or even several) that you know all your tests will depend on. “Autouse” fixtures are a convenient way to make all tests automatically request them. This can cut out a lot of redundant requests, and can even provide more advanced fixture usage (more on that further down).We can make a fixture an autouse fixture by passing in autouse=True to the fixture’s decorator. Here’s a simple example for how they can be used:
  - Sometimes you may want to have a fixture (or even several) that you know all your tests will depend on. “Autouse” fixtures are a convenient way to make all tests automatically request them. This can cut out a lot of redundant requests, and can even provide more advanced fixture usage (more on that further down).
 
- 
-  [Next]: https://docs.pytest.org/en/7.1.x/how-to/fixtures.html#scope-sharing-fixtures-across-classes-modules-packages-or-session
+[Fixture Scope] 
+- function: the default scope, the fixture is destroyed at the end of the test.
+- class: the fixture is destroyed during teardown of the last test in the class.
+- module: the fixture is destroyed during teardown of the last test in the module.
+- package: the fixture is destroyed during teardown of the last test in the package.
+- session: the fixture is destroyed at the end of the test session.
+
+[Teardown/Cleanup (AKA Fixture finalization)]
+
+- “Yield” fixtures yield instead of return. With these fixtures, we can run some code and pass an object back to the requesting fixture/test, just like with the other fixtures. The only differences are:
+- Refer file tests/test_teardown_finalization.py
+
+[How to mark test functions with attributes]
+- Check Pytest Markers -> pytest --markers
+
+  [Next]: https://docs.pytest.org/en/7.1.x/how-to/parametrize.html
