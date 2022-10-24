@@ -1,0 +1,6 @@
+eno=int(input('Enter ENO::'))
+ename=input('Enter Employee Name::')
+esal=float(input('Enter the emp Salary::'))
+eadd=input('Emp Address::')
+is_married=eval(input('Enter Married ?[True/False]::'))
+print('Confirm user Data::',eno,ename,esal,eadd,is_married)
