@@ -1,0 +1,11 @@
+"""
+Explore For loop Example
+"""
+count=0;
+def get_exp_v1(arg:str)->None:
+    print('Welcome')
+    for x in arg.split(' '):
+        print(x[::-1])
+        count+=1
+    print('total Word count::',count)
+get_exp_v1('Hello World')
