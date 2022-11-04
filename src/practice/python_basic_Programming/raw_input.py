@@ -1,5 +1,5 @@
-x=input('Enter Raw input::')
+x = input('Enter Raw input::')
 print(type(x))
-y=int(x) # typecast x(str) -> y(int)
+y = int(x)  # typecast x(str) -> y(int)
 print(type(y))
 print(y)

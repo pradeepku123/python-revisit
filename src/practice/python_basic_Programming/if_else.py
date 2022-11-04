@@ -1,5 +1,5 @@
 # Read Name of your
-name=input('Enter The Name::')
+name = input('Enter The Name::')
 if name == "pradeep":
     print('Hi Wellcome Pradeep')
 else:
